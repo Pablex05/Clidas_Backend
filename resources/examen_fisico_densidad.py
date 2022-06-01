@@ -8,14 +8,15 @@ class ExamenFisicoDensidadApi(Resource):
         examen_fisico_densidad = ExamenFisicoDensidad.objects.get(id=id).to_json()
         return Response(examen_fisico_densidad, mimetype="application/json", status=200)
 
-    def put(self, id):
-        examen_fisico_densidad = ExamenFisicoDensidad.objects.get(id=id)
-        examen_fisico_densidad.min = request.json['min']
-        examen_fisico_densidad.max = request.json['max']
-        examen_fisico_densidad.save()
-        
-        #ExamenFisicoDensidad.objects.get(id=id).update_one(**body)
-        return 'update OK!', 200
+    def put(self, id):  
+        try:
+            examen_fisico_densidad = ExamenFisicoDensidad.objects.get(id=id)
+            examen_fisico_densidad.min = request.json['min']
+            examen_fisico_densidad.max = request.json['max']
+            examen_fisico_densidad.save()
+            return 'update OK!', 200
+        except:
+            return 'update error!', 500
 
     def delete(self, id):
         ExamenFisicoDensidad.objects.get(id=id).delete()
