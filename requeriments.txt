@@ -1,6 +1,6 @@
 Flask
 mysql-connector-python
-Flask-SQLAlchemy
+Flask_SQLAlchemy
 flask-migrate
 flask-login
 flask-wtf
@@ -10,6 +10,7 @@ flask-jwt-extended
 flask-mail
 flask-cors
 flask-dotenv
+flask_marshmallow
 python-dotenv
 pandas
 numpy

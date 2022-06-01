@@ -1,28 +1,25 @@
+from dotenv import load_dotenv
 from flask import Flask
-import jwt
-from config import config
 from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+import os
 
+# Init app
 app = Flask(__name__)
-db = SQLAlchemy()
+load_dotenv(override=True)
 
+# Database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://' + os.getenv('DB_USERNAME') + ':' + os.getenv('DB_PASS') + '@localhost/database_clidas'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-@app.route('/clidas')
-def index():
-    return 'bienvenido a CLIDAS!'
+# Init db
+db = SQLAlchemy(app)
+# Init ma
+ma = Marshmallow(app)
 
-@app.route('/analisis')
-def listas_analisis():
-    try:
-        pass
-    except:
-        return 'Error'
-
-def page_not_found(error):
-    return '<h1>Page not found</h1>'
-
+# Run server
 if __name__ == "__main__":
-    app.config.from_object(config['development'])
-    app.register_error_handler(404, page_not_found)
-    app.run()
+    from url import *
+    from models import *
+    app.run(port=os.getenv('PORT'),debug=True)
 
