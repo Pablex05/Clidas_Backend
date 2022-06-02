@@ -30,7 +30,7 @@ class UreaApi(Resource):
         except:
             return 'delete error!', 500
 
-class Urea(Resource):
+class UreasApi(Resource):
 
     def get(self):
         try:

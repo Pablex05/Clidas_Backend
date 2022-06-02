@@ -47,3 +47,11 @@ for i in lista:
     b = i.lower()
     a = open(f'{b}.py', "w")
     a.close()
+"""
+a = open(f'nombres.txt', "w")
+for i in lista:
+    b = i.lower()
+    a.write(f'{b}')
+    a.write('\n')
+a.close()
+"""

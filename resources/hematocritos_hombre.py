@@ -2,7 +2,7 @@ from flask import Response, request
 from flask_restful import Resource
 from database.model import HematocritosHombre
 
-class HematocritosHombreApi(Resource):
+class HematocritoHombreApi(Resource):
 
     def get(self, id):
         try:
@@ -30,7 +30,7 @@ class HematocritosHombreApi(Resource):
         except:
             return 'delete error!', 500
 
-class HematocritosHombre(Resource):
+class HematocritosHombreApi(Resource):
 
     def get(self):
         try:

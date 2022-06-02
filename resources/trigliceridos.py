@@ -2,7 +2,7 @@ from flask import Response, request
 from flask_restful import Resource
 from database.model import Trigliceridos
 
-class TrigliceridosApi(Resource):
+class TrigliceridoApi(Resource):
 
     def get(self, id):
         try:
@@ -30,7 +30,7 @@ class TrigliceridosApi(Resource):
         except:
             return 'delete error!', 500
 
-class Trigliceridos(Resource):
+class TrigliceridosApi(Resource):
 
     def get(self):
         try:

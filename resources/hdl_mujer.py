@@ -30,7 +30,7 @@ class HdlMujerApi(Resource):
         except:
             return 'delete error!', 500
 
-class HdlMujer(Resource):
+class HdlsMujerApi(Resource):
 
     def get(self):
         try:

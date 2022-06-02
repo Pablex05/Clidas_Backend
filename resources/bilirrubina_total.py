@@ -30,7 +30,7 @@ class BilirrubinaTotalApi(Resource):
         except:
             return 'delete error!', 500
 
-class BilirrubinaTotalApi(Resource):
+class BilirrubinasTotalApi(Resource):
 
     def get(self):
         try:

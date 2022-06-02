@@ -2,7 +2,7 @@ from flask import Response, request
 from flask_restful import Resource
 from database.model import Basofilos
 
-class BasofilosApi(Resource):
+class BasofiloApi(Resource):
 
     def get(self, id):
         try:
@@ -30,7 +30,7 @@ class BasofilosApi(Resource):
         except:
             return 'delete error!', 500
 
-class Basofilos(Resource):
+class BasofilosApi(Resource):
 
     def get(self):
         try:

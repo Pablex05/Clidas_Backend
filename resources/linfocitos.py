@@ -2,7 +2,7 @@ from flask import Response, request
 from flask_restful import Resource
 from database.model import Linfocitos
 
-class LinfocitosApi(Resource):
+class LinfocitoApi(Resource):
 
     def get(self, id):
         try:
@@ -30,7 +30,7 @@ class LinfocitosApi(Resource):
         except:
             return 'delete error!', 500
 
-class Linfocitos(Resource):
+class LinfocitosApi(Resource):
 
     def get(self):
         try:

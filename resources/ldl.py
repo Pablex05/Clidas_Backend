@@ -30,7 +30,7 @@ class LdlApi(Resource):
         except:
             return 'delete error!', 500
 
-class Ldl(Resource):
+class LdlsApi(Resource):
 
     def get(self):
         try:

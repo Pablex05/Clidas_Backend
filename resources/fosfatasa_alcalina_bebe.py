@@ -30,7 +30,7 @@ class FosfatasaAlcalinaBebeApi(Resource):
         except:
             return 'delete error!', 500
 
-class FosfatasaAlcalinaBebeApi(Resource):
+class FosfatasasAlcalinaBebeApi(Resource):
 
     def get(self):
         try:

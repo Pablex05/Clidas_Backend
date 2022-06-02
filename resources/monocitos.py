@@ -30,7 +30,7 @@ class MonocitosApi(Resource):
         except:
             return 'delete error!', 500
 
-class Monocitos(Resource):
+class MonocitoApi(Resource):
 
     def get(self):
         try:

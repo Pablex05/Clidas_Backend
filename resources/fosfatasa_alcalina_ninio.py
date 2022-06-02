@@ -30,7 +30,7 @@ class FosfatasaAlcalinaNinioApi(Resource):
         except:
             return 'delete error!', 500
 
-class FosfatasaAlcalinaNinioApi(Resource):
+class FosfatasasAlcalinaNinioApi(Resource):
 
     def get(self):
         try:

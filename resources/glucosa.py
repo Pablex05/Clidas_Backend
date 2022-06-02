@@ -30,7 +30,7 @@ class GlucosaApi(Resource):
         except:
             return 'delete error!', 500
 
-class Glucosa(Resource):
+class GlucosasApi(Resource):
 
     def get(self):
         try:

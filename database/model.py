@@ -124,12 +124,12 @@ class Glucosa(db.Document):
 # ================= Examen Hematologico ======================
 # ===================== Serie Roja ===========================
 class GlobulosRojosTotalMujer(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class GlobulosRojosTotalHombre(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 # ============================================================
 class HematocritosHombre(db.Document):
     min = db.FloatField(required=True)
@@ -153,29 +153,29 @@ class SerieRojaAspecto(db.Document):
 # ============================================================
 # ==================== Serie Blanca ==========================
 class Leucocitos(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class NeutrofilosCayado(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class NeutrofilosSegmentado(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class Eosinofilos(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class Basofilos(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class Linfocitos(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
 
 class Monocitos(db.Document):
-    min = db.IntegerField(required=True)
-    max = db.IntegerField(required=True)
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)

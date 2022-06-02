@@ -30,7 +30,7 @@ class HemoglobinaGHombreApi(Resource):
         except:
             return 'delete error!', 500
 
-class HemoglobinaGHombre(Resource):
+class HemoglobinasGHombreApi(Resource):
 
     def get(self):
         try:

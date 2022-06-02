@@ -30,7 +30,7 @@ class CreatininaApi(Resource):
         except:
             return 'delete error!', 500
 
-class Creatinina(Resource):
+class CreatininasApi(Resource):
 
     def get(self):
         try:

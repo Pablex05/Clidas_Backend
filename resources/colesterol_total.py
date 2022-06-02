@@ -30,7 +30,7 @@ class ColesterolTotalApi(Resource):
         except:
             return 'delete error!', 500
 
-class ColesterolTotalApi(Resource):
+class ColesterolesTotalApi(Resource):
 
     def get(self):
         try:

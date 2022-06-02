@@ -30,7 +30,7 @@ class GlutamicoOxalaceticaHombreApi(Resource):
         except:
             return 'delete error!', 500
 
-class GlutamicoOxalaceticaHombreApi(Resource):
+class GlutamicosOxalaceticaHombreApi(Resource):
 
     def get(self):
         try:
