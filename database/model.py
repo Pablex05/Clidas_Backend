@@ -106,20 +106,20 @@ class Ldl(db.Document):
 class Creatinina(db.Document):
     min = db.FloatField(required=True)
     max = db.FloatField(required=True)
-    material = db.StringField(required=True)
-    metodo = db.StringField(required=True)
+    #material = db.StringField(required=True)
+    #metodo = db.StringField(required=True)
 # ============================================================
 class Urea(db.Document):
     min = db.FloatField(required=True)
     max = db.FloatField(required=True)
-    material = db.StringField(required=True)
-    metodo = db.StringField(required=True)
+    #material = db.StringField(required=True)
+    #metodo = db.StringField(required=True)
 # ============================================================
 class Glucosa(db.Document):
     min = db.FloatField(required=True)
     max = db.FloatField(required=True)
-    material = db.StringField(required=True)
-    metodo = db.StringField(required=True)
+    #material = db.StringField(required=True)
+    #metodo = db.StringField(required=True)
 # ============================================================
 # ================= Examen Hematologico ======================
 # ===================== Serie Roja ===========================
