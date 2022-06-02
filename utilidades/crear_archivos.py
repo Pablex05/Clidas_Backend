@@ -41,6 +41,7 @@ lista =[
     "Basofilos",
     "Linfocitos",
     "Monocitos"
+    "Plaquetas",
 ]
 
 for i in lista:

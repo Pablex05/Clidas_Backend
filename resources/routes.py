@@ -1,49 +1,53 @@
-from .examen_fisico_densidad import *
-from .examen_microscopico_epitelial import *
-from .examen_microscopico_leucocitos import *
-from .examen_microscopico_hematies import *
-from .examen_microscopico_cilindros import *
-from .examen_microscopico_mucus import *
-from .examen_microscopico_cristales import *
-from .examen_microscopico_germenes import *
-from .examen_fisico_reaccion import *
-from .examen_fisico_aspecto import *
-from .bilirrubina_total import *
-from .bilirrubina_directa import *
-from .bilirrubina_indirecta import *
-from .fosfatasa_alcalina_recien_nacido import *
-from .fosfatasa_alcalina_bebe import *
-from .fosfatasa_alcalina_ninio import *
-from .fosfatasa_alcalina_adulto import *
-from .glutamico_piruvica_hombre import *
-from .glutamico_piruvica_mujer import *
-from .glutamico_oxalacetica_hombre import *
-from .glutamico_oxalacetica_mujer import *
-from .trigliceridos import *
-from .colesterol_total import *
-from .hdl_hombre import *
-from .hdl_mujer import *
-from .ldl import *
-from .creatinina import *
-from .urea import *
-from .glucosa import *
-from .globulos_rojos_total_mujer import *
-from .globulos_rojos_total_hombre import *
-from .hematocritos_hombre import *
-from .hematocritos_mujer import *
-from .hemoglobina_g_hombre import *
-from .hemoglobina_g_mujer import *
-from .serie_roja_aspecto import *
-from .leucocitos import *
-from .neutrofilos_cayado import *
-from .neutrofilos_segmentado import *
-from .eosinofilos import *
-from .basofilos import *
-from .linfocitos import *
-from .monocitos import *
+from resources.rutinas.plaquetas import PlaquetasApi
+from resources.rutinas.examen_fisico_densidad import *
+from resources.rutinas.examen_microscopico_epitelial import *
+from resources.rutinas.examen_microscopico_leucocitos import *
+from resources.rutinas.examen_microscopico_hematies import *
+from resources.rutinas.examen_microscopico_cilindros import *
+from resources.rutinas.examen_microscopico_mucus import *
+from resources.rutinas.examen_microscopico_cristales import *
+from resources.rutinas.examen_microscopico_germenes import *
+from resources.rutinas.examen_fisico_reaccion import *
+from resources.rutinas.examen_fisico_aspecto import *
+from resources.rutinas.bilirrubina_total import *
+from resources.rutinas.bilirrubina_directa import *
+from resources.rutinas.bilirrubina_indirecta import *
+from resources.rutinas.fosfatasa_alcalina_recien_nacido import *
+from resources.rutinas.fosfatasa_alcalina_bebe import *
+from resources.rutinas.fosfatasa_alcalina_ninio import *
+from resources.rutinas.fosfatasa_alcalina_adulto import *
+from resources.rutinas.glutamico_piruvica_hombre import *
+from resources.rutinas.glutamico_piruvica_mujer import *
+from resources.rutinas.glutamico_oxalacetica_hombre import *
+from resources.rutinas.glutamico_oxalacetica_mujer import *
+from resources.rutinas.trigliceridos import *
+from resources.rutinas.colesterol_total import *
+from resources.rutinas.hdl_hombre import *
+from resources.rutinas.hdl_mujer import *
+from resources.rutinas.ldl import *
+from resources.rutinas.creatinina import *
+from resources.rutinas.urea import *
+from resources.rutinas.glucosa import *
+from resources.rutinas.globulos_rojos_total_mujer import *
+from resources.rutinas.globulos_rojos_total_hombre import *
+from resources.rutinas.hematocritos_hombre import *
+from resources.rutinas.hematocritos_mujer import *
+from resources.rutinas.hemoglobina_g_hombre import *
+from resources.rutinas.hemoglobina_g_mujer import *
+from resources.rutinas.serie_roja_aspecto import *
+from resources.rutinas.leucocitos import *
+from resources.rutinas.neutrofilos_cayado import *
+from resources.rutinas.neutrofilos_segmentado import *
+from resources.rutinas.eosinofilos import *
+from resources.rutinas.basofilos import *
+from resources.rutinas.linfocitos import *
+from resources.rutinas.monocitos import *
+from resources.rutinas.plaquetas import *
 
+from .configuracion_rutinas import *
 
 def initialize_routes(api):
+    # ======================= Rutinas =====================================
     api.add_resource(ExamenFisicoDensidadApi, '/Clidas/api/rutinas/examen-fisico-densidad/<id>')
     api.add_resource(ExamenesFisicosDensidadApi, '/Clidas/api/rutinas/examenes-fisico-densidad')
     #api.add_resource(ExamenesMicroscopicoEpitelialApi, '/Clidas/api/rutinas/examen-microscopico-epitelial')
@@ -130,3 +134,8 @@ def initialize_routes(api):
     api.add_resource(LinfocitoApi, '/Clidas/api/rutinas/linfocitos/<id>')
     api.add_resource(MonocitosApi, '/Clidas/api/rutinas/monocitos')
     api.add_resource(MonocitoApi, '/Clidas/api/rutinas/monocitos/<id>')
+    api.add_resource(PlaquetasApi, '/Clidas/api/rutinas/plaquetas')
+    api.add_resource(PlaquetaApi, '/Clidas/api/rutinas/plaquetas/<id>')
+    # ==========================================================================
+    # ================== Configuraciones Rutinas ===============================
+    api.add_resource(ConfiguracionesRutinasApi, '/Clidas/api/configuraciones-rutinas')

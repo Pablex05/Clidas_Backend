@@ -179,3 +179,8 @@ class Linfocitos(db.Document):
 class Monocitos(db.Document):
     min = db.FloatField(required=True)
     max = db.FloatField(required=True)
+# ============================================================
+# ==================  Plaquetas =============================
+class Plaquetas(db.Document):
+    min = db.FloatField(required=True)
+    max = db.FloatField(required=True)
