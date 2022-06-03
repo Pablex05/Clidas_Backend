@@ -148,12 +148,7 @@ class ConfiguracionesRutinasApi(Resource):
             return Response(status=200)
         except:
             return Response(status=404)
-
-
-
-
-
-
+    
 
 class ConfiguracionRutinasApi(Resource):
     def get(self, id):
