@@ -48,3 +48,5 @@ class BasofilosApi(Resource):
             return {'id': str(id)}, 200
         except:
             return 'post error!', 500
+    
+    

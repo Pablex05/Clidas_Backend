@@ -139,3 +139,4 @@ def initialize_routes(api):
     # ==========================================================================
     # ================== Configuraciones Rutinas ===============================
     api.add_resource(ConfiguracionesRutinasApi, '/Clidas/api/configuraciones-rutinas')
+    api.add_resource(ConfiguracionRutinasApi, '/Clidas/api/configuraciones-rutinas/<id>')
